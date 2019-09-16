@@ -4,7 +4,7 @@ emoji = {}
 file='./lib/emoticons.yml'
 def load_library(file)
   emoji=YAML.load_file(file)
-  emoji[:get_meaning]
+  emoji[:get_meaning] =[]
   emoji.each_key do |key|
     emoji[:get_meaning]<<"#{key}"
   end 
