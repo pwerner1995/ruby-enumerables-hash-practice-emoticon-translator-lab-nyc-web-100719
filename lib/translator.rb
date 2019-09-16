@@ -8,7 +8,6 @@ def load_library(file)
   hash[:get_meaning] ={}
   hash[:get_emoticon]={}
   emoji.each_key do |key|
-    p key 
     p emoji[key][0]
     hash[:get_meaning]={"#{emoji[key][1]}" => "#{key}"}
     hash[:get_emoticon] ={"#{emoji[key][0]}" => "#{emoji[key][1]}"}
