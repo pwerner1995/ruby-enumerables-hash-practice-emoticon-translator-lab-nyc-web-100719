@@ -1,11 +1,8 @@
 # require modules here
 require 'yaml'
-emoji = YAML.load_file('./lib/emoticons.yml')
+emoji=YAML.load_file('./lib/emoticons.yml')
 def load_library(emoji)
-  hash={:get_emoticon => {emoji.inspect},
-  :get_meaning => {emoji.inspect}
-  }
-  p hash 
+  p emoji 
 end
 
 def get_japanese_emoticon
