@@ -1,6 +1,6 @@
 # require modules here
 require 'yaml'
-emoji = {}
+emoji = {:get_emoticon => {}, :get_meaning => {}}
 file='./lib/emoticons.yml'
 def load_library(file)
   emoji=YAML.load_file(file)
