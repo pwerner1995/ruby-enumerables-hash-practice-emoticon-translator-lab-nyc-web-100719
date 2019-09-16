@@ -20,7 +20,7 @@ def get_japanese_emoticon(file,emoticon)
   if hash[:get_emoticon].key?(emoticon)
     p hash[:get_emoticon][emoticon]
   else
-    puts "Sorry, that emoticon was not found"
+    p "Sorry, that emoticon was not found"
   end 
 end
 
