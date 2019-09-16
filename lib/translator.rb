@@ -10,7 +10,7 @@ def load_library(file)
   emoji.each_key do |key|
     hash[:get_meaning]={:"#{emoji[key][2]}" => "#{key}"}
   end 
-  p emoji 
+  p hash 
 end
 
 def get_japanese_emoticon
