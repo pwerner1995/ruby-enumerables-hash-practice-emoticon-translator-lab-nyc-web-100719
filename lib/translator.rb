@@ -4,12 +4,12 @@ emoji = {}
 file='./lib/emoticons.yml'
 def load_library(file)
   emoji=YAML.load_file(file)
-  emoji[:get_meaning] =[]
-  emoji[:get_emoticon]=[]
+  hash[:get_meaning] =[]
+  hash[:get_emoticon]=[]
   emoji.each_key do |key|
-    emoji[:get_meaning]<<"#{key}"
+    hash[:get_meaning]<<"#{key}"
   end 
-  p emoji 
+  p hash 
 end
 
 def get_japanese_emoticon
