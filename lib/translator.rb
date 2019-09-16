@@ -11,6 +11,7 @@ def load_library(file)
     hash[:get_meaning]={"#{emoji[key][1]}" => "#{key}"}
     hash[:get_emoticon] ={"#{emoji[key][0]}" => "#{emoji[key][1]}"}
   end 
+  p emoji
   p hash 
 end
 
