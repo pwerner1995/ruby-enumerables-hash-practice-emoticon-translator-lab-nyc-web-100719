@@ -1,15 +1,15 @@
 # require modules here
 require 'yaml'
-hash = {}
+emoji = {}
 file='./lib/emoticons.yml'
 def load_library(file)
   emoji=YAML.load_file(file)
-  hash[:get_meaning] =[]
-  hash[:get_emoticon]=[]
+  emoji[:get_meaning] =[]
+  emoji[:get_emoticon]=[]
   emoji.each_key do |key|
-    hash[:get_meaning]<<"#{key}"
+    emoji[:get_meaning]<<"#{key}"
   end 
-  p hash 
+  p emoji 
 end
 
 def get_japanese_emoticon
