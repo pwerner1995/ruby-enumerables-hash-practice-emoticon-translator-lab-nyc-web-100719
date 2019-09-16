@@ -2,7 +2,7 @@
 require 'yaml'
 emoji = {}
 emoji=YAML.load_file('./lib/emoticons.yml')
-def load_library
+def load_library(emoji)
   
   p emoji 
 end
